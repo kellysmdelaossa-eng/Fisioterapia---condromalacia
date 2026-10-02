@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evaluación Médica y Plan de Tratamiento - Condromalacia Rotuliana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed min-h-screen p-4 sm:p-8">
+  
+  <main class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+    
+    <!-- Header -->
+    <header class="bg-teal-700 text-white p-6 sm:p-10">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div>
+          <span class="bg-teal-800 text-teal-200 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Informe de Consulta Médica</span>
+          <h1 class="text-2xl sm:text-3xl font-bold mt-2">Condromalacia Rotuliana Bilateral</h1>
+          <p class="text-teal-100 text-sm mt-1">Comunicación para Fisioterapia &bull; Fisio: Genry Suárez</p>
+        </div>
+        <div class="text-left sm:text-right text-xs text-teal-100 border-l sm:border-l-0 sm:border-r border-teal-600 pl-3 sm:pl-0 sm:pr-3">
+          <p class="font-medium text-white">Paciente: Kellys María de la Ossa</p>
+          <p>Ortopeda: Dr. Blachi Salomón Cohen A.</p>
+          <p>Fecha de consulta: Octubre 2026</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="p-6 sm:p-10 space-y-8">
+
+      <!-- Resumen Clínico -->
+      <section>
+        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
+          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Diagnóstico y Valoración Ortopédica
+        </h2>
+        <div class="mt-4 bg-teal-50/60 border border-teal-100 rounded-xl p-5 text-sm space-y-2">
+          <p><strong>Diagnóstico:</strong> Condromalacia Rotuliana Bilateral (confirmada por ecografía).</p>
+          <p><strong>Hallazgos de exploración:</strong> Sin derrame articular, sin fluido ni masas. Dolor generado por la inflamación y fricción del cartílago rotuliano contra el cóndilo del fémur durante la flexión de rodilla.</p>
+        </div>
+      </section>
+
+      <!-- Retroalimentación de Ejercicios -->
+      <section>
+        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
+          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          Criterio del Ortopeda sobre los Ejercicios de Fisioterapia
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <!-- Aceptado -->
+          <div class="border border-emerald-200 bg-emerald-50/50 rounded-xl p-5">
+            <div class="flex items-center gap-2 text-emerald-800 font-bold mb-2">
+              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Aceptado / Recomendado</span>
+            </div>
+            <h3 class="font-semibold text-slate-900 text-sm">Sentadilla Isométrica en Pared</h3>
+            <p class="text-xs text-slate-600 mt-2">
+              <strong>Condición del médico:</strong> Permitida únicamente en <strong>rango corto (flexión leve / "sin bajar mucho")</strong>. Se busca activación muscular estática sin generar compresión patelofemoral profunda.
+            </p>
+          </div>
+
+          <!-- Rechazado -->
+          <div class="border border-rose-200 bg-rose-50/50 rounded-xl p-5">
+            <div class="flex items-center gap-2 text-rose-800 font-bold mb-2">
+              <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              <span>No Recomendado / Contraindicado</span>
+            </div>
+            <h3 class="font-semibold text-slate-900 text-sm">Cubo: Sentarse y levantarse unipodal</h3>
+            <p class="text-xs text-slate-600 mt-2">
+              <strong>Indicación del médico:</strong> Descartar por el momento. Representa una sobrecarga focalizada excesiva en el cartílago que exacerba el dolor.
+            </p>
+          </div>
+        </div>
+
+        <!-- Orientación de entrenamiento -->
+        <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-5 text-sm">
+          <h3 class="font-semibold text-slate-900 mb-1">Enfoque de Fortalecimiento Sugerido:</h3>
+          <p class="text-slate-600">
+            El ortopeda indicó evitar el sobre-fortalecimiento intensivo del cuádriceps, ya que este músculo presenta buen tono y la hiperactivación aumenta la tracción patelar. Se sugiere redireccionar el plan de entrenamiento hacia <strong>glúteos, zona abdominal (core) y brazos</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tratamiento Farmacológico -->
+      <section>
+        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
+          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          Esquema Médico Prescrito
+        </h2>
+        <ul class="mt-4 space-y-3 text-sm text-slate-700">
+          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">1</span>
+            <div>
+              <strong>Meloxicam 15 mg:</strong> 1 tableta diaria vía oral durante 15 días.
+            </div>
+          </li>
+          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">2</span>
+            <div>
+              <strong>Glucosamina + Condroitina + MSM (1500+1200+2400 mg):</strong> 1 sobre diario diluido en agua por 90 días (3 meses).
+            </div>
+          </li>
+          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">3</span>
+            <div>
+              <strong>Betametasona:</strong> 1 ampolla IM (dosis única).
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Próximos pasos -->
+      <section>
+        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
+          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          Seguimiento Diagnóstico
+        </h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Se tomarán radiografías bilaterales de rodilla (AP y Lateral) para presentar en la cita de control médico programada en 1 mes.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 p-6 text-center text-xs text-slate-500 border-t border-slate-200">
+      <p>Documento informativo preparado para coordinación entre Ortopedia y Fisioterapia.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
