@@ -3,143 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Evaluación Médica y Plan de Tratamiento - Condromalacia Rotuliana</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Evaluación Médica y Registro - Condromalacia Rotuliana</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #1e293b; padding: 16px; line-height: 1.6; }
+    .container { max-width: 850px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+    header { background-color: #0f766e; color: #ffffff; padding: 24px; }
+    .badge { background-color: #115e59; color: #99f6e4; font-size: 11px; font-weight: bold; text-transform: uppercase; padding: 4px 10px; border-radius: 9999px; display: inline-block; margin-bottom: 8px; }
+    h1 { font-size: 24px; font-weight: 800; }
+    .subhead { color: #ccfbf1; font-size: 14px; margin-top: 4px; }
+    .meta { font-size: 12px; color: #e6fffa; margin-top: 12px; border-top: 1px solid #14b8a6; pt-2; padding-top: 8px; }
+    .content { padding: 24px; }
+    section { margin-bottom: 32px; }
+    h2 { font-size: 18px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #0f766e; padding-bottom: 6px; margin-bottom: 16px; }
+    .card-teal { background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 16px; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 12px; }
+    .box { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
+    .box-title { font-weight: 700; font-size: 14px; color: #0f172a; }
+    .tag { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+    .tag-green { background: #dcfce7; color: #166534; }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-amber { background: #fef3c7; color: #92400e; }
+    .btn { display: block; text-align: center; background: #0f766e; color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 700; padding: 10px; border-radius: 6px; margin-top: 12px; }
+    .btn:hover { background: #115e59; }
+    ol, ul { padding-left: 20px; font-size: 13px; }
+    li { margin-bottom: 8px; }
+    footer { background: #f1f5f9; text-align: center; padding: 16px; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed min-h-screen p-4 sm:p-8">
-  
-  <main class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
-    
-    <!-- Header -->
-    <header class="bg-teal-700 text-white p-6 sm:p-10">
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <div>
-          <span class="bg-teal-800 text-teal-200 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Informe de Consulta Médica</span>
-          <h1 class="text-2xl sm:text-3xl font-bold mt-2">Condromalacia Rotuliana Bilateral</h1>
-          <p class="text-teal-100 text-sm mt-1">
-            Comunicación para Fisioterapia &bull; Fisio: <strong>Genry Suárez</strong> (Gimnasio SmartFit)
-          </p>
-        </div>
-        <div class="text-left sm:text-right text-xs text-teal-100 border-l sm:border-l-0 sm:border-r border-teal-600 pl-3 sm:pl-0 sm:pr-3">
-          <p class="font-medium text-white">Paciente: Kellys De La Ossa</p>
-          <p>Ortopeda: Dr. Blachi Salomón Cohen A.</p>
-          <p>Fecha de consulta: Octubre 2026</p>
-        </div>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">Informe Clínico & Plan Semanal Integrado</span>
+      <h1>Condromalacia Rotuliana Bilateral</h1>
+      <p class="subhead">Seguimiento para Fisioterapia &bull; Fisio: <strong>Genry Suárez</strong> (SmartFit)</p>
+      <div class="meta">
+        <p><strong>Paciente & Autora:</strong> Kellys De La Ossa | <strong>Ortopeda:</strong> Dr. Blachi Salomón Cohen A.</p>
+        <p>Última actualización: 10 de octubre de 2026</p>
       </div>
     </header>
 
-    <div class="p-6 sm:p-10 space-y-8">
-
-      <!-- Resumen Clínico -->
+    <div class="content">
+      
       <section>
-        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
-          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-          Diagnóstico y Valoración Ortopédica
-        </h2>
-        <div class="mt-4 bg-teal-50/60 border border-teal-100 rounded-xl p-5 text-sm space-y-2">
+        <h2>Diagnóstico y Valoración Ortopédica</h2>
+        <div class="card-teal">
           <p><strong>Diagnóstico:</strong> Condromalacia Rotuliana Bilateral (confirmada por ecografía).</p>
-          <p><strong>Hallazgos de exploración:</strong> Sin derrame articular, sin fluido ni masas. Dolor generado por la inflamación y fricción del cartílago rotuliano contra el cóndilo del fémur al flexionar la rodilla.</p>
+          <p style="margin-top:6px;"><strong>Hallazgos:</strong> Sin derrame articular. Dolor originado por inflamación y fricción del cartílago rotuliano al flexionar la rodilla.</p>
         </div>
       </section>
 
-      <!-- Retroalimentación de Ejercicios -->
       <section>
-        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
-          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          Criterio del Ortopeda sobre los Ejercicios de Fisioterapia
-        </h2>
+        <h2>Registro de Evidencias de Entrenamiento (10/10/2026)</h2>
+        <div class="grid">
+          
+          <div class="box">
+            <div>
+              <span class="tag tag-green">Rango Corto</span>
+              <div class="box-title">Sentadilla Isométrica en Pared</div>
+              <p style="font-size: 12px; color: #475569; margin-top: 6px;">
+                <strong>Duración lograda:</strong> 1:30 minutos.<br/>
+                Ejecutada con flexión leve para evitar la compresión femoropatelar profunda.
+              </p>
+            </div>
+            <a href="[suspicious link removed]" target="_blank" class="btn">Ver Video en Google Drive</a>
+          </div>
+
+          <div class="box">
+            <div>
+              <span class="tag tag-blue">Inicio 10/10/2026</span>
+              <div class="box-title">Zancada Inversa (Con Carga)</div>
+              <p style="font-size: 12px; color: #475569; margin-top: 6px;">
+                <strong>Dosificación:</strong> 3 series × 12 repeticiones.<br/>
+                <strong>Carga:</strong> Mancuernas de 7 kg por mano (14 kg total). Sustituye la zancada isométrica estática.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div>
+              <span class="tag tag-amber">Control Unipodal</span>
+              <div class="box-title">Single-Leg Sit-to-Stand (Cubo)</div>
+              <p style="font-size: 12px; color: #475569; margin-top: 6px;">
+                <strong>Sentarse y levantarse a 1 pierna:</strong> Monitoreo de técnica y elevación de cajón para protección articular.
+              </p>
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; text-align: center; margin-top: 12px;">Pendiente adjuntar video</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <h2>Protocolo de Protección Articular</h2>
+        <div class="grid">
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; border-radius:8px; font-size:12px;">
+            <strong style="color:#0f766e;">Extensión de Cuádriceps (55 kg)</strong>
+            <p style="margin-top:4px; color:#334155;">Ejecución en Rango Restringido (ROM): movimiento únicamente de 90° a 45° de flexión (evitando extensión completa a 0°).</p>
+          </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; border-radius:8px; font-size:12px;">
+            <strong style="color:#0f766e;">Linear Leg Press (30 kg/lado)</strong>
+            <p style="margin-top:4px; color:#334155;">Pies altos en plataforma y flexión máxima a 90° para transferir la carga a la cadena posterior.</p>
+          </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; border-radius:8px; font-size:12px;">
+            <strong style="color:#0f766e;">Single-Leg Sit-to-Stand (Cubo)</strong>
+            <p style="margin-top:4px; color:#334155;">Cajón elevado para reducir flexión profunda unipodal y asistencia manual para estabilizar la rodilla.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Rutina Semanal Reestructurada e Integrada</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <!-- Aceptado -->
-          <div class="border border-emerald-200 bg-emerald-50/50 rounded-xl p-5">
-            <div class="flex items-center gap-2 text-emerald-800 font-bold mb-2">
-              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Aceptado / Recomendado</span>
-            </div>
-            <h3 class="font-semibold text-slate-900 text-sm">Sentadilla Isométrica en Pared</h3>
-            <p class="text-xs text-slate-600 mt-2">
-              <strong>Condición del médico:</strong> Permitida únicamente en <strong>rango corto (flexión leve / "sin bajar mucho")</strong> para activar el músculo sin generar compresión o fricción patelofemoral profunda.
-            </p>
-          </div>
-
-          <!-- Rechazado / Contraindicado -->
-          <div class="border border-rose-200 bg-rose-50/50 rounded-xl p-5 space-y-3">
-            <div class="flex items-center gap-2 text-rose-800 font-bold mb-1">
-              <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              <span>No Recomendados / Contraindicados</span>
-            </div>
-            <div>
-              <h3 class="font-semibold text-slate-900 text-sm">1. Cubo: Sentarse y levantarse unipodal</h3>
-              <p class="text-xs text-slate-600 mt-1">
-                <strong>Indicación del médico:</strong> Descartar por el momento. Representa una sobrecarga focalizada excesiva en la articulación patelofemoral.
-              </p>
-            </div>
-            <div class="border-t border-rose-200/60 pt-2">
-              <h3 class="font-semibold text-slate-900 text-sm">2. Zancadas (Zancada isométrica / Lunge)</h3>
-              <p class="text-xs text-slate-600 mt-1">
-                <strong>Indicación del médico:</strong> Descartar. La flexión profunda con carga sobre la rodilla exacerba la fricción y la inflamación del cartílago rotuliano.
-              </p>
-            </div>
-          </div>
+        <div style="margin-bottom:16px; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:16px;">
+          <h3 style="color:#0f766e; font-size:15px; margin-bottom:8px;">🍑 LUNES — Glúteos + Isquiotibiales (Dominante de Cadera)</h3>
+          <ol>
+            <li><strong>Movilidad y activación de core</strong> (5–8 min).</li>
+            <li><strong>Pasar pierna sobre mancuerna / Banda en tobillos:</strong> 3 × 12–15.</li>
+            <li><strong>Single-Leg Sit-to-Stand (Cubo):</strong> 2–3 × 8 rep/pierna (Cajón alto con apoyo).</li>
+            <li><strong>Sentadilla isométrica en pared:</strong> 3 × 1 min (Rango corto).</li>
+            <li><strong>Zancadas inversas:</strong> 3 × 12 rep/pierna (Mancuernas de 7 kg).</li>
+            <li><strong>Barbell Hip Thrust:</strong> 3 × 10–12 rep (30 kg).</li>
+            <li><strong>Peso Muerto:</strong> 3 × 8–12 rep (38 kg).</li>
+            <li><strong>Femoral Sentado:</strong> 3 × 10–12 rep (70–85 kg).</li>
+            <li><strong>Abducción de cadera en máquina:</strong> 3 × 10–15 rep (110 kg).</li>
+            <li><strong>Caminadora:</strong> 15 min.</li>
+          </ol>
         </div>
 
-        <!-- Orientación de entrenamiento -->
-        <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-5 text-sm">
-          <h3 class="font-semibold text-slate-900 mb-1">Enfoque del Plan en SmartFit:</h3>
-          <p class="text-slate-600">
-            El médico sugirió evitar la sobrecarga intensiva del cuádriceps debido a que ya cuenta con buen tono muscular y la tracción repetida exacerba la inflamación. Recomendó reorientar el entrenamiento hacia <strong>glúteos, zona abdominal (core) y brazos</strong>.
-          </p>
+        <div style="margin-bottom:16px; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:16px;">
+          <h3 style="color:#0f766e; font-size:15px; margin-bottom:8px;">🦵 MIÉRCOLES — Glúteos + Cuádriceps (Carga Controlada)</h3>
+          <ol>
+            <li><strong>Movilidad articular</strong> (5–8 min).</li>
+            <li><strong>Elevación frontal de pierna:</strong> 3 × 12 rep/pierna (Bajada lentísima).</li>
+            <li><strong>Barbell Hip Thrust:</strong> 3 × 10–12 rep (30 kg).</li>
+            <li><strong>Linear Leg Press:</strong> 3 × 10–12 rep (30 kg/lado — Pies altos, flexión máx 90°).</li>
+            <li><strong>Extensión de cuádriceps:</strong> 2–3 × 10–12 rep (55 kg — Rango 90° a 45°).</li>
+            <li><strong>Aducción de cadera en máquina:</strong> 3 × 10–15 rep (110 kg).</li>
+            <li><strong>Caminadora:</strong> 15 min.</li>
+          </ol>
         </div>
+
+        <div style="margin-bottom:16px; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:16px;">
+          <h3 style="color:#0f766e; font-size:15px; margin-bottom:8px;">🔥 VIERNES — Integración Completa (Volumen Equilibrado)</h3>
+          <ol>
+            <li><strong>Movilidad y banda en tobillos</strong> (5–8 min).</li>
+            <li><strong>Single-Leg Sit-to-Stand (Cubo):</strong> 2 × 8 rep/pierna.</li>
+            <li><strong>Sentadilla isométrica en pared:</strong> 3 × 1 min (Rango corto).</li>
+            <li><strong>Zancadas inversas:</strong> 3 × 10–12 rep/pierna (Mancuernas de 7 kg).</li>
+            <li><strong>Barbell Hip Thrust:</strong> 3 × 10–12 rep (30 kg).</li>
+            <li><strong>Peso Muerto:</strong> 3 × 8–12 rep (38 kg).</li>
+            <li><strong>Femoral Sentado:</strong> 3 × 10–12 rep (70–85 kg).</li>
+            <li><strong>Linear Leg Press:</strong> 2–3 × 10 rep (30 kg/lado — Pies altos).</li>
+            <li><strong>Extensión de cuádriceps:</strong> 2 × 10 rep (55 kg — Rango restringido).</li>
+            <li><strong>Abducción / Aducción de cadera:</strong> 3 × 12 rep (110 kg).</li>
+            <li><strong>Caminadora:</strong> 15 min.</li>
+          </ol>
+        </div>
+
       </section>
 
-      <!-- Tratamiento Farmacológico -->
       <section>
-        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
-          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-          Esquema Médico Prescrito
-        </h2>
-        <ul class="mt-4 space-y-3 text-sm text-slate-700">
-          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
-            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">1</span>
-            <div>
-              <strong>Meloxicam 15 mg:</strong> 1 tableta diaria vía oral durante 15 días.
-            </div>
-          </li>
-          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
-            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">2</span>
-            <div>
-              <strong>Glucosamina + Condroitina + MSM (1500+1200+2400 mg):</strong> 1 sobre diario diluido en agua por 90 días (3 meses).
-            </div>
-          </li>
-          <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg">
-            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded mt-0.5">3</span>
-            <div>
-              <strong>Betametasona:</strong> 1 ampolla IM (dosis única).
-            </div>
-          </li>
+        <h2>Esquema Médico Prescrito</h2>
+        <ul>
+          <li><strong>Meloxicam 15 mg:</strong> 1 tableta diaria vía oral por 15 días.</li>
+          <li><strong>Glucosamina + Condroitina + MSM:</strong> 1 sobre diario por 90 días (3 meses).</li>
+          <li><strong>Betametasona:</strong> 1 ampolla IM (dosis única).</li>
         </ul>
-      </section>
-
-      <!-- Próximos pasos -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 border-b pb-2 flex items-center gap-2">
-          <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-          Seguimiento Diagnóstico
-        </h2>
-        <p class="mt-3 text-sm text-slate-600">
-          Se tomarán radiografías bilaterales de rodilla (AP y Lateral) para presentar en la cita de control médico en 1 mes.
-        </p>
       </section>
 
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-100 p-6 text-center text-xs text-slate-500 border-t border-slate-200 space-y-1">
-      <p class="font-medium text-slate-600">Página creada por Kellys De La Ossa</p>
-      <p>Documento para la coordinación del plan de entrenamiento y rehabilitación en SmartFit.</p>
+    <footer>
+      <p>Página creada por Kellys De La Ossa</p>
+      <p>Documento de seguimiento clínico y planificación de entrenamiento para SmartFit.</p>
     </footer>
-
-  </main>
+  </div>
 
 </body>
 </html>
